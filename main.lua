@@ -5,25 +5,25 @@ rock.__index 		= rock
 
 function rock.new(lifetime,sizex,sizey,sizeZ,maxparts,radius,target,cancollide,anchored)
 	local self			= setmetatable({},rock)
-	self.vector 		= Vector3.new
+	self.vector 			= Vector3.new
 	self.tInfo 			= TweenInfo.new
-	self.enumAxis 		= Enum.Axis
+	self.enumAxis 			= Enum.Axis
 	self.delay 			= task.delay
 	self.angle 			= CFrame.fromEulerAnglesXYZ
-	self.axisAngle 		= CFrame.fromAxisAngle
+	self.axisAngle 			= CFrame.fromAxisAngle
 	self.axis 			= Vector3.FromAxis
-	self.debris 		= Instance.new("Folder",workspace)
-	self.debris.Name 	= "DEBRIS"
-	self._trove 		= trove.new()
-	self.lifetime 		= lifetime
+	self.debris 			= Instance.new("Folder",workspace)
+	self.debris.Name 		= "DEBRIS"
+	self._trove 			= trove.new()
+	self.lifetime 			= lifetime
 	self.sizeX 			= sizex
 	self.sizeY 			= sizey
 	self.sizeZ 			= sizeZ
-	self.maxparts 		= maxparts
-	self.radius 		= radius
-	self.target 		= target
-	self.cancollide 	= cancollide
-	self.anchored 		= anchored
+	self.maxparts 			= maxparts
+	self.radius 			= radius
+	self.target 			= target
+	self.cancollide 		= cancollide
+	self.anchored 			= anchored
 	return self
 end
 
