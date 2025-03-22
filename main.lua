@@ -1,7 +1,7 @@
 local rock 			= {}
-local tweenS 		= game:GetService("TweenService")
-local trove 		= require(game.ReplicatedStorage.Trove)
-rock.__index 		= rock
+local tweenS 			= game:GetService("TweenService")
+local trove 			= require(game.ReplicatedStorage.Trove)
+rock.__index 			= rock
 
 function rock.new(lifetime,sizex,sizey,sizeZ,maxparts,radius,target,cancollide,anchored)
 	local self			= setmetatable({},rock)
